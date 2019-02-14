@@ -4,7 +4,7 @@ A javascript technical indicators.
 
 包含  asi, bias, boll, kdj, macd, rsi, vr, wr 
 
-# Demo 
+## Demo 
 
 ```javascript
 
@@ -70,13 +70,16 @@ A javascript technical indicators.
 
 ```
 
-# scan all Indicators 查看所有指标计算公式
+## scan all Indicators 查看所有指标计算公式
+
 ```javascript
 
     console.log(hxc3.IndicatorFormula.getAllClass())
 
+```
 
-# scan Indicators configs 查看某个指标的配置项
+## scan Indicators configs 查看某个指标的配置项
+
 ```javascript
 
     var KDJ = hxc3.IndicatorFormula.getClass('kdj');
@@ -85,7 +88,7 @@ A javascript technical indicators.
 
 ```
 
-# Adding new indicators 添加新的指标计算
+## Adding new indicators 添加新的指标计算
 
 ```javascript
 
