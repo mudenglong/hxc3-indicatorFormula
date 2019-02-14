@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "ie": "9"
+        },
+        "modules": false,
+        "loose": true
+      }
+    ],
+    "stage-0"
+  ],
+  "plugins": [
+  ]
+}

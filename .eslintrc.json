@@ -1,0 +1,26 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true,
+        "es6": true
+    },
+    "globals": {
+        "$": true,
+        "require": true,
+        "console": true,
+        "define": true,
+        "module": true,
+        "MZ": true,
+        "console": true,
+        "runtimeOption": true,
+        "window": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": 0
+    }
+}

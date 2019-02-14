@@ -1,0 +1,48 @@
+{
+  "name": "hxc3-indicatorFormula",
+  "version": "1.0.0",
+  "description": "hxc3 technical indicator support ie7+",
+  "main": "dist/indicatorFormula.js",
+  "moduleName": "hxc3",
+  "scripts": {
+    "dev-webpack": "webpack-dev-server --config webpack.config.dev.js --progress --colors",
+    "prod-rollup": "rollup --config rollup.config.prod.js",
+    "start": "npm run dev-webpack",
+    "build": "npm run prod-rollup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mudenglong/hxc3-indicatorFormula.git"
+  },
+  "keywords": [
+    "hxc3",
+    "technical",
+    "indicator",
+    "stock",
+    "hq"
+  ],
+  "author": "hhroot",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-external-helpers": "~6.22.0",
+    "babel-preset-env": "~1.6.1",
+    "babel-preset-stage-0": "~6.24.1",
+    "rollup": "^0.56.5",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "~9.0.0",
+    "rollup-plugin-filesize": "~1.5.0",
+    "rollup-plugin-node-resolve": "~3.0.3",
+    "rollup-plugin-progress": "~0.4.0",
+    "rollup-plugin-strip": "~1.1.1",
+    "rollup-plugin-uglify": "~3.0.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/mudenglong/hxc3-indicatorFormula/issues"
+  },
+  "homepage": "https://github.com/mudenglong/hxc3-indicatorFormula#readme"
+}

@@ -1,0 +1,8 @@
+node_modules
+dist/hxc3Indicator.**
+*.log.**
+*.log
+dist/**
+package-lock.json
+.eslintrc.js
+.vscode/**
