@@ -1,14 +1,7 @@
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
-export default class KDJ extends IndicatorFormula{
-    static type = 'kdj';
-
-    static defaultOption = {
-        N: 9,
-        M1: 3,
-        M2: 3
-    }
-
+class KDJ extends IndicatorFormula{
+    
     calculate(data){
         var KDJ_N = this.get('N'),
             KDJ_M1 = this.get('M1'),
@@ -77,5 +70,15 @@ export default class KDJ extends IndicatorFormula{
 
 }
 
+KDJ.type = 'kdj';
+
+KDJ.defaultOption = {
+    N: 9,
+    M1: 3,
+    M2: 3
+}
+
 // 公式注册
 registerIndicatorFormula(KDJ, KDJ.type);
+
+export default KDJ

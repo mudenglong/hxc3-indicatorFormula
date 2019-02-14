@@ -1,7 +1,7 @@
 import { fClosePrice, getDataInRound } from '../util'
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula'; 
 
-export default class BIAS extends IndicatorFormula{
+class BIAS extends IndicatorFormula{
     
     // L2, L3 实际中没有绘制，所以没有计算
     calculate(data){
@@ -54,3 +54,5 @@ BIAS.defaultOption = {
 }
 // 公式注册
 registerIndicatorFormula(BIAS, BIAS.type);
+
+export default BIAS

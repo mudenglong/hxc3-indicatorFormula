@@ -1,6 +1,6 @@
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
-export default class BOLL extends IndicatorFormula{
+class BOLL extends IndicatorFormula{
     
     calculate(data){
         var BOLL_N = this.get('BOLL_N'),
@@ -54,3 +54,5 @@ BOLL.defaultOption = {
 
 // 公式注册
 registerIndicatorFormula(BOLL, BOLL.type);
+
+export default BOLL

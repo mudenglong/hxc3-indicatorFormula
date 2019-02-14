@@ -2,7 +2,7 @@ import { decimalRound, fClosePrice, fOpenPrice, fMin, fMax, MAX, ABS, fIf } from
 
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
-export default class ASI extends IndicatorFormula{
+class ASI extends IndicatorFormula{
 
     calculate(data){
 
@@ -94,3 +94,5 @@ ASI.defaultOption = {
 
 // 公式注册
 registerIndicatorFormula(ASI, ASI.type);
+
+export default ASI

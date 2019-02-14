@@ -1,7 +1,7 @@
 import { getDataInRound } from '../util'
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
-export default class VR extends IndicatorFormula{
+class VR extends IndicatorFormula{
     
     calculate(data){
         var M1 = this.get('M1'),
@@ -45,3 +45,5 @@ VR.defaultOption = {
 
 // 公式注册
 registerIndicatorFormula(VR, VR.type);
+
+export default VR

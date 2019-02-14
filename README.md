@@ -69,6 +69,18 @@ A javascript technical indicators.
     console.log(result)
 
 ```
+## es6
+
+```javascript
+
+    import { IndicatorFormula } from 'hxc3-indicator-formula';
+    
+    const Formula = IndicatorFormula.getClass('wr')
+    let formula = new Formula();
+    let result = formula.calculate(data);
+    console.log(result)
+
+```
 
 ## scan all Indicators 查看所有指标计算公式
 

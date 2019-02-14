@@ -7,11 +7,6 @@ import { enableClassManagement, merge, clone } from './util';
  */
 class IndicatorFormula{
 
-    /**
-     * {string} 组件名type
-     */
-    static type = 'indicatorFormula';
-
     constructor(opt) {
         let option = opt ? clone(opt) : {};
         this._option = merge(option, this.constructor.defaultOption, false);
@@ -32,6 +27,10 @@ class IndicatorFormula{
     }
 
 };
+/**
+ * {string} 组件名type
+ */
+IndicatorFormula.type = 'indicatorFormula';
 enableClassManagement(IndicatorFormula);
 
 /**

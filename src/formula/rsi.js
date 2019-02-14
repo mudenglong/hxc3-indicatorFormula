@@ -2,7 +2,7 @@ import { SMA, MAX, ABS } from '../util'
 
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
-export default class RSI extends IndicatorFormula{
+class RSI extends IndicatorFormula{
     
     calculate(data){
         var RSI_N1 = this.get('N1'),
@@ -67,3 +67,5 @@ RSI.defaultOption = {
 
 // 公式注册
 registerIndicatorFormula(RSI, RSI.type);
+
+export default RSI
