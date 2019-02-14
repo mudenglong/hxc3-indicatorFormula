@@ -1,14 +1,7 @@
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
 export default class MACD extends IndicatorFormula{
-    static type = 'macd';
-
-    static defaultOption = {
-        SHORT: 12,
-        LONG: 26,
-        M: 9
-    }
-
+    
     calculate(data){
         var MACD_SHORT = this.get('SHORT'),
             MACD_LONG = this.get('LONG'),
@@ -53,6 +46,15 @@ export default class MACD extends IndicatorFormula{
     }
 
 }
+
+MACD.type = 'macd';
+
+MACD.defaultOption = {
+    SHORT: 12,
+    LONG: 26,
+    M: 9
+}
+
 
 // 公式注册
 registerIndicatorFormula(MACD, MACD.type);

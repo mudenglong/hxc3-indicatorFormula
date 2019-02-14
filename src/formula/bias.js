@@ -2,14 +2,7 @@ import { fClosePrice, getDataInRound } from '../util'
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula'; 
 
 export default class BIAS extends IndicatorFormula{
-    static type = 'bias';
-
-    static defaultOption = {
-        L1: 6,
-        L4: 12,
-        L5: 24
-    }
-
+    
     // L2, L3 实际中没有绘制，所以没有计算
     calculate(data){
         var L1 = this.get('L1'),
@@ -52,5 +45,12 @@ export default class BIAS extends IndicatorFormula{
 
 }
 
+BIAS.type = 'bias';
+
+BIAS.defaultOption = {
+    L1: 6,
+    L4: 12,
+    L5: 24
+}
 // 公式注册
 registerIndicatorFormula(BIAS, BIAS.type);

@@ -1,13 +1,7 @@
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
 export default class BOLL extends IndicatorFormula{
-    static type = 'boll';
-
-    static defaultOption = {
-        BOLL_N: 20,
-        BOLL_P: 2
-    }
-
+    
     calculate(data){
         var BOLL_N = this.get('BOLL_N'),
             BOLL_P = this.get('BOLL_P'),
@@ -49,6 +43,13 @@ export default class BOLL extends IndicatorFormula{
         return item;
     }
 
+}
+
+BOLL.type = 'boll';
+
+BOLL.defaultOption = {
+    BOLL_N: 20,
+    BOLL_P: 2
 }
 
 // 公式注册

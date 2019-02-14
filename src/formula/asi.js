@@ -3,12 +3,6 @@ import { decimalRound, fClosePrice, fOpenPrice, fMin, fMax, MAX, ABS, fIf } from
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
 export default class ASI extends IndicatorFormula{
-    static type = 'asi';
-
-    static defaultOption = {
-        M1: 26,
-        M2: 10
-    }
 
     calculate(data){
 
@@ -89,6 +83,13 @@ export default class ASI extends IndicatorFormula{
         }
         return result;
     }
+}
+
+ASI.type = 'asi';
+
+ASI.defaultOption = {
+    M1: 26,
+    M2: 10
 }
 
 // 公式注册

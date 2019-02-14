@@ -1,15 +1,6 @@
 import { getDataInRound, fClosePrice } from '../util'
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
-
-export default class WR extends IndicatorFormula{
-    static type = 'wr';
-
-    static defaultOption = {
-        N: 10,
-        N1: 6, 
-        N2: 20,
-        N3: 80
-    }
+class WR extends IndicatorFormula{
 
     calculate(data){
         var N1 = this.get('N1');
@@ -44,6 +35,16 @@ export default class WR extends IndicatorFormula{
     }
 
 }
+WR.type = 'wr'
+WR.defaultOption = {
+    N: 10,
+    N1: 6, 
+    N2: 20,
+    N3: 80
+}
+
 
 // 公式注册
 registerIndicatorFormula(WR, WR.type);
+
+export default WR

@@ -3,14 +3,7 @@ import { SMA, MAX, ABS } from '../util'
 import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula';
 
 export default class RSI extends IndicatorFormula{
-    static type = 'rsi';
-
-    static defaultOption = {
-        N1: 6,
-        N2: 12,
-        N3: 24
-    }
-
+    
     calculate(data){
         var RSI_N1 = this.get('N1'),
             RSI_N2 = this.get('N2'),
@@ -62,6 +55,14 @@ export default class RSI extends IndicatorFormula{
     
     }
 
+}
+
+RSI.type = 'rsi';
+
+RSI.defaultOption = {
+    N1: 6,
+    N2: 12,
+    N3: 24
 }
 
 // 公式注册
