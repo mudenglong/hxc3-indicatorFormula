@@ -70,6 +70,12 @@ A javascript technical indicators.
 
 ```
 
+# scan all Indicators 查看所有指标计算公式
+```javascript
+
+    console.log(hxc3.IndicatorFormula.getAllClass())
+
+
 # scan Indicators configs 查看某个指标的配置项
 ```javascript
 
