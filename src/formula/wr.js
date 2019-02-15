@@ -5,6 +5,8 @@ class WR extends IndicatorFormula{
     calculate(data){
         var N = this.get('N');
         var N1 = this.get('N1');
+        var N2 = this.get('N2');
+        var N3 = this.get('N3');
 
         var indexs = [N1, N];
         var s1max = 'maxR' + indexs[0];
@@ -29,7 +31,9 @@ class WR extends IndicatorFormula{
             result.push({ 
                 xIndex: data[i].t,
                 WR1: b,
-                WR2: a 
+                WR2: a,
+                A: N2,
+                D: N3 
             });
         }
         return result;

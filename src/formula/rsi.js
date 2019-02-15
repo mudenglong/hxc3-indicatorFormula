@@ -20,7 +20,6 @@ class RSI extends IndicatorFormula{
             i1,
             i2,
             j,
-            temp,
             item = [];
 
         for (j = 0; j < data.length; j++) {
@@ -47,7 +46,9 @@ class RSI extends IndicatorFormula{
                 xIndex: data[j].t,
                 ['RSI'+RSI_N1]: r,
                 ['RSI'+RSI_N2]: s,
-                ['RSI'+RSI_N3]: i
+                ['RSI'+RSI_N3]: i,
+                A: 20,
+                D: 80
             })
         }
 
