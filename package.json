@@ -1,7 +1,7 @@
 {
   "name": "hxc3-indicator-formula",
-  "version": "1.0.7",
-  "description": "hxc3 technical indicator support ie7+",
+  "version": "1.0.8",
+  "description": "股票技术指标库 hxc3 technical indicator support ie7+",
   "main": "dist/indicatorFormula.js",
   "moduleName": "hxc3",
   "scripts": {

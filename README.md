@@ -3,6 +3,7 @@
 A javascript technical indicators.
 
 包含  asi, bias, boll, kdj, macd, rsi, vr, wr 
+可轻松扩展其他指标计算
 
 ## Install
 
@@ -104,7 +105,7 @@ release:
 
 ```
 
-## Scan all Indicators 查看所有指标计算公式
+## Scan all indicators 查看所有指标计算公式
 
 ```javascript
 
@@ -112,7 +113,7 @@ release:
 
 ```
 
-## Scan Indicators configs 查看某个指标的配置项
+## Scan indicators option 查看某个指标的配置项
 
 ```javascript
 
