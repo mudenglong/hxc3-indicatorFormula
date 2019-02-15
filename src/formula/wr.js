@@ -3,9 +3,10 @@ import { IndicatorFormula, registerIndicatorFormula } from '../indicatorFormula'
 class WR extends IndicatorFormula{
 
     calculate(data){
+        var N = this.get('N');
         var N1 = this.get('N1');
 
-        var indexs = [6, N1];
+        var indexs = [N1, N];
         var s1max = 'maxR' + indexs[0];
         var s1min = 'minR' + indexs[0];
 
