@@ -16,7 +16,7 @@ run dev:
 2. open browser , 'http://127.0.0.1:8080/demo/'
 
 release:
-1. enter the project dir , `npm build`
+1. enter the project dir , `npm run build`
 
 ### npm install
 
@@ -84,7 +84,7 @@ release:
     
 ]
      
-    var KDJ = IndicatorFormula.getClass('kdj');
+    var KDJ = hxc3.IndicatorFormula.getClass('kdj');
     var kdjIndicator = new KDJ();
     var result = kdjIndicator.calculate(data);
     console.log(result)
@@ -97,9 +97,9 @@ release:
 
     import { IndicatorFormula } from 'hxc3-indicator-formula';
     
-    const Formula = IndicatorFormula.getClass('wr')
-    let formula = new Formula();
-    let result = formula.calculate(data);
+    const KDJ = IndicatorFormula.getClass('kdj')
+    let kdjIndicator = new KDJ();
+    let result = kdjIndicator.calculate(data);
     console.log(result)
 
 ```
