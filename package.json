@@ -1,6 +1,6 @@
 {
   "name": "hxc3-indicator-formula",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "hxc3 technical indicator support ie7+",
   "main": "dist/indicatorFormula.js",
   "moduleName": "hxc3",
