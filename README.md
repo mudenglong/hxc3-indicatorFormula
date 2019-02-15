@@ -4,7 +4,28 @@ A javascript technical indicators.
 
 包含  asi, bias, boll, kdj, macd, rsi, vr, wr 
 
+## install
+
+### git clone
+
+`git clone https://github.com/mudenglong/hxc3-indicatorFormula.git`
+
+run dev:
+    
+1. enter the project dir , `npm instal`, `npm start`
+2. open browser , 'http://127.0.0.1:8080/demo/'
+
+release:
+1. enter the project dir , `npm build`
+
+### npm install
+
+`npm i hxc3-indicator-formula`
+
+
 ## Demo 
+
+详细参见 /demo/index.html
 
 ```javascript
 
@@ -32,7 +53,7 @@ A javascript technical indicators.
     {"t": "20160429", "o": 78.2, "a": 85.89, "i": 75.66, "c": 76.94, "n": 180592400 },
     {"t": "20160531", "o": 76.89, "a": 82.03, "i": 74.12, "c": 82, "n": 372797840 },
     {"t": "20160630", "o": 79.15, "a": 80.14, "i": 74.85, "c": 79.598, "n": 347040840 },
-    {"t": "20160729", "o": null, "a": 85, "i": null, "c": 82.48, "n": 160246260 },
+    {"t": "20160729", "o": 79.12, "a": 85, "i": 77.68, "c": 82.48, "n": 160246260 },
     {"t": "20160826", "o": 82.79, "a": 98.86, "i": 82.59, "c": 95.06, "n": 399044690 },
     {"t": "20160930", "o": 97.97, "a": 109.87, "i": 97, "c": 105.79, "n": 354603350 },
     {"t": "20161031", "o": 105.45, "a": 106.29, "i": 99, "c": 101.69, "n": 174483980 },
@@ -63,12 +84,13 @@ A javascript technical indicators.
     
 ]
      
-    var KDJ = hxc3.IndicatorFormula.getClass('kdj');
+    var KDJ = IndicatorFormula.getClass('kdj');
     var kdjIndicator = new KDJ();
     var result = kdjIndicator.calculate(data);
     console.log(result)
 
 ```
+
 ## es6
 
 ```javascript
@@ -86,7 +108,7 @@ A javascript technical indicators.
 
 ```javascript
 
-    console.log(hxc3.IndicatorFormula.getAllClass())
+    console.log(IndicatorFormula.getAllClass())
 
 ```
 
@@ -94,7 +116,7 @@ A javascript technical indicators.
 
 ```javascript
 
-    var KDJ = hxc3.IndicatorFormula.getClass('kdj');
+    var KDJ = IndicatorFormula.getClass('kdj');
     
     console.log(KDJ.defaultOption)
 
@@ -102,7 +124,26 @@ A javascript technical indicators.
 
 ## Adding new indicators 添加新的指标计算
 
+参见 已有的指标，如src/formula/kdj.js
+
 ```javascript
+    
+    import { registerIndicatorFormula } from 'hxc3-indicator-formula';
+    
+    class NewIndicator{
+        // required 必须实现的方法
+        calculate(data){
+            return [{
+                xIndex:...,
+                XX1:...,
+                XX2:...
+            }]
+        }
+    }
+
+    // unique required
+    // type名保证唯一
+    NewIndicator.type = 'newIndicator'
 
     registerIndicatorFormula(NewIndicator, NewIndicator.type)
 

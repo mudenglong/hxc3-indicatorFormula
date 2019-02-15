@@ -1,8 +1,7 @@
 node_modules
-dist/hxc3Indicator.**
+dist/indicatorFormula.js.map
 *.log.**
 *.log
-dist/**
 package-lock.json
 .eslintrc.js
 .vscode/**

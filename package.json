@@ -1,9 +1,8 @@
 {
   "name": "hxc3-indicator-formula",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "hxc3 technical indicator support ie7+",
   "main": "dist/indicatorFormula.js",
-  "moduleName": "hxc3",
   "scripts": {
     "dev-webpack": "webpack-dev-server --config webpack.config.dev.js --progress --colors",
     "prod-rollup": "rollup --config rollup.config.prod.js",
