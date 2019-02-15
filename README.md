@@ -4,7 +4,7 @@ A javascript technical indicators.
 
 包含  asi, bias, boll, kdj, macd, rsi, vr, wr 
 
-## install
+## Install
 
 ### git clone
 
@@ -91,7 +91,7 @@ release:
 
 ```
 
-## es6
+## ES6
 
 ```javascript
 
@@ -104,7 +104,7 @@ release:
 
 ```
 
-## scan all Indicators 查看所有指标计算公式
+## Scan all Indicators 查看所有指标计算公式
 
 ```javascript
 
@@ -112,7 +112,7 @@ release:
 
 ```
 
-## scan Indicators configs 查看某个指标的配置项
+## Scan Indicators configs 查看某个指标的配置项
 
 ```javascript
 
