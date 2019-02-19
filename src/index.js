@@ -1,4 +1,4 @@
-export * from './indicatorFormula';
+export { registerIndicatorFormula, IndicatorFormula } from './indicatorFormula';
 
 /** 技术指标 indicator **/
 import './formula/asi';
